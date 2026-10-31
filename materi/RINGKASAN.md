@@ -12,7 +12,7 @@ Catatan: PDF RPS berupa hasil pindai (teks tidak bisa diekstrak).
 | 4 | Gerak Vibrasi | osilator harmonik, massa tereduksi, kuantisasi, fungsi gelombang, titik balik, HCl & efek isotop, aktivitas IR, anharmonisitas, mode normal | **sudah** (repo Claude-Video-Kimia) |
 | 5 | Gerak Rotasi | partikel pada cincin, rotor linear 3D, harmonik sferis, momentum sudut, konstanta rotasi & spektrum garis (HI/DI), panjang ikatan, populasi & suhu, spin | **sudah** (repo video-gasing-kuantum, milik Chika, gaya buku catatan terang) |
 | 6 | Struktur & Spektrum Atom Hidrogen | massa tereduksi, pemisahan radial–sudut, potensial efektif, asal kuantisasi, fungsi radial, bilangan kuantum, distribusi radial, orbital s/p/d, ionisasi, deret Lyman/Balmer, aturan seleksi | **sudah** (repo video-atom-hidrogen, ±19 menit) |
-| 7 | Simbol Term & Aturan Seleksi | spin & Pauli, simbol term, aturan Hund, pola p & d, struktur halus, paritas & aturan seleksi | belum |
+| 7 | Simbol Term & Aturan Seleksi | spin & Pauli, simbol term, aturan Hund, pola p & d, struktur halus, paritas & aturan seleksi | **sudah** (video-simbol-term, "Kode Rahasia Atom", ±17,5 menit) |
 
 ## Ide visual per modul
 - **1**: lampu pijar memerah→putih (benda hitam), foton menendang elektron, garis spektrum H.

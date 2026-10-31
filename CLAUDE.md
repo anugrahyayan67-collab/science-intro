@@ -27,10 +27,13 @@ Dokumen serah-terima: semua yang perlu diketahui asisten AI (Claude Code, atau A
 | `video-fisika-termofisika` | **Seri #7** "Ke Mana Panas Pergi" — Termofisika (RPS minggu 10–11), 20 adegan; teori kinetik, Maxwell–Boltzmann, faktor Boltzmann, S = k ln W. Merged. |
 | `video-fisika-listrik` | **Seri #8** "Gaya yang Menyatukan Atom" — Listrik (RPS 12–13), 19 adegan; ikatan ion, atom H −13,6 eV, eV, elektrolisis. Merged. |
 | `video-fisika-magnet` | **Seri #9** "Listrik yang Bergerak" — Magnet (RPS 14), 16 adegan; spektrometer massa, spin & Stern–Gerlach, NMR, MRI. PR #1. |
-| `video-fisika-atom` (repo belum dibuat; folder lokal) | **Seri #10 (penutup)** "Tangga di Dalam Atom" — Fisika Atom & Bohr (RPS 15), 16 adegan; Rutherford, Bohr, Balmer/Lyman/Paschen, de Broglie, orbital; outro memuat strip 10 video. Diaudit. |
+| `video-fisika-atom` | **Seri #10 (penutup)** "Tangga di Dalam Atom" — Fisika Atom & Bohr (RPS 15), 16 adegan; Rutherford, Bohr, Balmer/Lyman/Paschen, de Broglie, orbital; outro memuat strip 10 video. Diaudit. |
+| `video-akhir-zaman` | Video renungan "Menuju Akhir Zaman" — alur akhir zaman (Al-Qur'an & hadis sahih, pil sumber di layar) + renungan zaman AI; tanpa sosok/wajah, dalil & renungan dipisah. Merged. |
+| `video-simbol-term` (repo belum dibuat; folder lokal) | Video Modul 7 "Kode Rahasia Atom" — simbol term & aturan seleksi, ±17,5 menit, 24 adegan; benang merah dua garis D natrium. Mesin: Modul 2 + perbaikan seri fisika. Diaudit (qa-lines + glitch). |
+| `video-ikatan-valensi` (repo belum dibuat; folder lokal) | Video pertemuan 9 (setelah UTS) "Jabat Tangan Elektron" — teori ikatan valensi, ±14 menit, 22 adegan; Heitler–London, hibridisasi, berakhir di O₂ paramagnetik → video MOT berikutnya. |
 
 ## Status materi
-Lihat `materi/RINGKASAN.md`. Modul 3, 4, dan 6 sudah jadi video; Modul 2 naskah & adegan jadi (tinggal narasi + render); Modul 5 dibuat Chika (video-gasing-kuantum). Saran berikutnya: **Modul 1** (pengantar) atau **Modul 7** (simbol term).
+Lihat `materi/RINGKASAN.md`. Modul 3, 4, dan 6 sudah jadi video; Modul 2 naskah & adegan jadi (tinggal narasi + render); Modul 5 dibuat Chika (video-gasing-kuantum). Modul 7 jadi (video-simbol-term). Setelah UTS (RPS pertemuan 9–14): VBT (video-ikatan-valensi, sedang dibuat) → MOT diatomik → MOT poliatomik/Hückel → simetri & grup titik → spektroskopi. Pengguna minta **jangan Modul 1/kuantum pengantar dulu**; fokus materi setelah UTS.
 Seri Fisika Umum (urutan mengikuti RPS Fisika Umum S1 Kimia UNESA, diarahkan sebagai fondasi kimia kuantum): #1 Usaha & Energi ✓ · #2 Fluida Statis ✓ · #3 Fluida Dinamis ✓ · #4 Momentum ✓ · #5 Osilasi ✓ · #6 Gelombang ✓ · #7 Termofisika ✓ · #8 Listrik ✓ · #9 Magnet (PR) · #10 Fisika Atom (jadi, menunggu repo) — **seri tamat** (semua materi RPS). #4–#8 sudah merge; render dijalankan pengguna. Narasi belum direkam. Narasi seri fisika belum direkam (kredit ElevenLabs habis; Sidik Jari v2 sudah memakai suara klon baru `eleven_v4`).
 
 ## Cara kerja yang sudah terbukti
@@ -81,6 +84,8 @@ Seri Fisika Umum (urutan mengikuti RPS Fisika Umum S1 Kimia UNESA, diarahkan seb
 
 - Pengguna minta kerja terus sampai batas pemakaian habis, lalu lanjut otomatis: pasang `send_later` ±3 jam (setelah reset) berisi langkah lanjutan; agen yang terhenti dilanjutkan lewat SendMessage (pekerjaannya tersimpan). Commit WIP sebelum batas.
 - Pipeline video seri baru (±1 jam kerja): `gen_<topik>.py` di scratchpad menulis `src/script.ts` (naskah + `hl` + jeda) → salin repo seri sebelumnya lewat `git archive` → stub adegan, index, brand, ChapterHeading, GHOSTS latar, REFS outro, kode warna, tts, nada musik → AUDIT (cek angka) → 4 agen Opus paralel per kelompok adegan → commit per kelompok → `check-cues` + `qa-lines` (baca semua lembar) → `qa-film` + `qa-glitch`.
+- Mesin `video-landasan-kimia-kuantum` (Modul 2) masih memakai CSS blur di `SceneShell` (Composition.tsx) dan pada `Part` → ganti dengan SceneShell seri fisika (translate + opacity) sebelum dipakai ulang; salin juga `Captions.tsx`, `anim.ts` (EASE lembut, `cyc`), `tts.ts`, `qa-lines`/`qa-film`/`qa-glitch` dari seri fisika.
+- `scripts/contact.py out/x out/x-s 3` (3 kolom) lebih mudah dibaca daripada 9 kolom.
 - Setiap video seri fisika punya Bagian 2 "di dunia kimia" yang menjembatani ke kimia kuantum (pengguna tertarik kuantum dan merasa video berbahasa Indonesia langka).
 
 ## Aturan untuk sesi baru
