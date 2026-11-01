@@ -90,7 +90,7 @@ Seri Fisika Umum (urutan mengikuti RPS Fisika Umum S1 Kimia UNESA, diarahkan seb
 
 ## Aturan untuk sesi baru
 - Mulai dengan membaca file ini dan `materi/RINGKASAN.md`; jangan minta pengguna menjelaskan ulang.
-- Untuk video baru pakai skill `video-sains` (paket lengkap: `SKILL.md` + `references/` pipeline, naskah, gaya, adegan, QA, narasi, GitHub, pelajaran + `scripts/new-video.sh` - Untuk video baru pakai skill `video-sains`. Repo video baru dibuat pengguna; minta namanya lalu `add_repo`. `gen_template.py`). Skill ini milik pribadi pengguna (tidak dijual) — perbarui setiap ada cara kerja atau pelajaran baru. Repo video baru dibuat pengguna; minta namanya di awal lalu `add_repo`.
+- Untuk video baru pakai skill `video-sains` (paket lengkap: `SKILL.md` + `references/` pipeline, naskah, gaya, adegan, QA, narasi, GitHub, pelajaran + `scripts/new-video.sh` dan `gen_template.py`). Skill ini milik pribadi pengguna (tidak dijual) — perbarui setiap ada cara kerja atau pelajaran baru. Repo video baru dibuat pengguna; minta namanya di awal lalu `add_repo`.
 - Jawab ringkas dalam bahasa Indonesia; beri link GitHub yang bisa langsung diketuk di iPad.
 - Hemat token: baca bab PDF seperlunya, jangan tempel isi PDF di chat.
 - Setelah selesai: perbarui status di `materi/RINGKASAN.md` dan tambahkan pelajaran baru ke bagian "Pelajaran" di atas.
