@@ -1,49 +1,39 @@
 ---
 name: video-sains
-description: Membuat video edukasi Kimia Kuantum (atau sains lain) dengan Remotion bergaya animasi gelap + subtitle kata-per-kata, render 2K via GitHub Actions. Pakai saat pengguna minta "bikin video modul N", "video materi kuliah", atau video edukasi sains.
+description: Membuat video edukasi sains/kimia (Kimia Kuantum, Fisika Umum, renungan, dll.) dengan Remotion — animasi vektor yang terus bergerak, subtitle kata-per-kata, render 2K di GitHub Actions, versi dengan & tanpa narasi. Pakai saat pengguna minta "bikin video modul N", "video materi kuliah", "video seri fisika", atau video edukasi apa pun berdurasi panjang (10–25 menit).
 ---
 
-# Video edukasi sains — cara kerja
+# Video edukasi sains — pipeline lengkap
 
-Pengguna: mahasiswa S1 Kimia UNESA, berbahasa Indonesia, menonton & mengunduh lewat iPad. Jawab dalam bahasa Indonesia, singkat, langkah jelas. Hemat token: jangan membaca seluruh PDF.
+Pemilik: Yayan (Septian Anugrah Dwi Putra), S1 Kimia UNESA. Bahasa Indonesia santai, menonton di iPad.
+Skill ini merangkum cara kerja yang sudah terbukti di ±15 video. Baca berkas rujukan sesuai tahap — jangan baca semuanya sekaligus.
 
-## 0. Standar kualitas (wajib, berdasarkan masukan pengguna)
-- Modul hanya **referensi**, bukan naskah. Tulis cerita yang memikat dan mudah dipahami seperti video "Sidik Jari Molekul" (hook → pertanyaan → jawaban visual). Boleh menambah fakta, contoh, dan aplikasi dari sumber luar yang **nyata dan dapat dicek** (NIST, IUPAC, buku teks Atkins/Levine/McQuarrie, jurnal) — sebutkan di layar rujukan; jangan mengarang data.
-- **Subtitle kata-per-kata wajib ada** di semua versi (pakai `Captions` dari Claude-Video-Kimia), kecuali pengguna minta dimatikan.
-- **Tata letak rapi**: tiap adegan pakai grid yang jelas (mis. kiri visual / kanan rumus, atau visual di tengah + kartu rumus di bawah), margin aman ≥ 80 px, jarak antar-elemen ≥ 32 px. Tidak boleh ada teks yang menabrak garis, kartu, label, atau subtitle. Zona bawah 180 px dicadangkan untuk subtitle.
-- **Rumus** ditampilkan besar & jelas (≥ 48 px, subskrip terbaca), satu rumus utama per momen, muncul bertahap mengikuti narasi; jangan menumpuk banyak kartu.
-- Visual harus **bergerak menjelaskan** (orbital berputar, elektron melompat memancarkan foton, garis spektrum muncul), bukan diagram diam. Hindari layar setengah kosong.
-- QA: setiap still diperiksa khusus untuk tabrakan teks/elemen dan keterbacaan sebelum render final.
+## Peta berkas
+| Berkas | Kapan dibaca |
+|---|---|
+| `references/pipeline.md` | Membuat video baru dari nol (langkah 1–10, perintah persis). |
+| `references/naskah.md` | Menulis naskah: struktur cerita, aturan teks TTS, generator `gen_<topik>.py`. |
+| `references/gaya.md` | Memilih/menjaga gaya visual & kode warna per seri; mesin mana yang disalin. |
+| `references/adegan.md` | Membangun adegan: API `useScene`, helper animasi, komponen, aturan tata letak & kemulusan, prompt agen paralel. |
+| `references/qa.md` | Audit: check-cues, qa-lines + lembar kontak, qa-moments, uji glitch seluruh film. |
+| `references/narasi.md` | Suara (ElevenLabs suara klon / Edge TTS), `tts.ts`, cek pengucapan Whisper. |
+| `references/github.md` | Repo baru, PR, workflow render, cara memberi tahu pengguna. |
+| `references/pelajaran.md` | Daftar "jangan lakukan ini" — cek sebelum menyerahkan pekerjaan. |
+| `scripts/gen_template.py` | Kerangka generator naskah (salin ke scratchpad, isi `SCRIPT`). |
+| `scripts/new-video.sh` | Menyalin mesin dari repo video sebelumnya ke folder baru + mengganti nama komposisi. |
 
-## 1. Pilih materi
-- Baca `materi/RINGKASAN.md` dulu (daftar modul, isi pokok, status, ide visual).
-- Ekstrak HANYA bab yang dipakai: `pdftotext -layout -f <hal> -l <hal> materi/Modul_N_*.pdf -` (nomor halaman ada di daftar isi modul).
-- Setelah video selesai, perbarui kolom "Status video" di RINGKASAN.md.
+## Aturan inti (selalu berlaku)
+1. **Claude tidak menjalankan workflow GitHub Actions.** Setelah merge ke `main`, beri link Actions + nama workflow; pengguna yang menekan *Run workflow*.
+2. **Jangan pernah meminta atau menampilkan kunci API.** Kunci ada di secret GitHub per repo.
+3. Modul kuliah = referensi, bukan naskah. Cerita memikat: hook → pertanyaan → jawaban visual → penerapan. Fakta luar modul harus nyata & dicek (catat di `naskah/AUDIT.md`) **sebelum** narasi direkam.
+4. Visual harus **bergerak sesuai fisika** (posisi dihitung per frame), bukan slide statis. Semua animasi dari frame (`interpolate`/`ramp`), tanpa animasi CSS.
+5. Rumus utama ≥ 56 px, satu kartu per momen; zona subtitle (bawah 180 px) selalu kosong; margin ≥ 80 px.
+6. Kemulusan: tanpa CSS blur, tanpa ganti elemen berdasarkan ambang (silang-pudar), tanpa filter pada garis lurus.
+7. Selalu sediakan versi **tanpa narasi** (subtitle + musik).
+8. Commit & push WIP sebelum pekerjaan panjang (render, agen paralel) — sesi bisa dimulai ulang / kena batas pemakaian.
+9. Jawab ringkas dalam bahasa Indonesia, beri link yang bisa diketuk di iPad. Kirim pratinjau (lembar kontak) lewat SendUserFile.
+10. Setelah selesai: perbarui `materi/RINGKASAN.md` & `CLAUDE.md` repo `science-intro` (status + pelajaran baru), dan perbarui skill ini bila ada cara kerja baru.
 
-## 2. Contoh yang sudah jadi (tiru strukturnya, jangan mulai dari nol)
-- Repo `septiananugrah-ship-it/Claude-Video-Kimia` (Modul 4 Vibrasi, ±16 menit). Salin mesinnya:
-  `src/script.ts` (naskah per adegan: teks, kata kunci `hl`, `pause`, `part`), `src/timeline.ts` (5,3 suku kata/dtk + jeda nyata dari `src/voiceover.ts`),
-  `src/SceneContext.tsx` (`useScene().cue(i)`/`wordOf`), `src/components/` (latar, subtitle, heading bab, primitif atom/pegas/spektrum),
-  `scripts/generate-voiceover.ts`, `scripts/build-audio.ts`, `scripts/assemble.sh`, `scripts/render-chunk.ts`, `scripts/make-music.py`,
-  `.github/workflows/render-video.yml` (12 potongan paralel → gabung, 2K) dan `voiceover.yml`.
-- Repo `septiananugrah-ship-it/science-intro`: intro SCIENTIAN 18 dtk. Tempel di awal video (render terpisah, gabungkan saat assemble atau di editor).
-- Repo baru per video dibuat oleh pengguna (Claude tidak bisa membuat repo); minta pengguna membuatnya kosong lalu `add_repo`.
-
-## 3. Struktur video (wajib untuk tugas)
-Pembuka (hook) → judul → peta video → **Bagian 1 prinsip & teori dasar** → **Bagian 2 implementasi dalam kimia** → **Bagian 3 penerapan industri** → rangkuman → penutup + rujukan. Tiap adegan 30–60 dtk, satu ide, visual yang bergerak menjelaskan (bukan slide teks).
-
-## 4. Gaya visual
-- 1920×1080 didesain, komposisi 2K = skala vektor 4/3. Latar gelap, glow, kata kunci emas, subtitle kata-per-kata.
-- Semua gerak dari frame (`interpolate`, tanpa animasi CSS). Transisi kamera zoom-through + kilatan singkat (jangan dua adegan bertumpuk).
-- Rumus ditulis benar; angka dicek terhadap modul (sebut nilai dan satuan).
-- QA: render still tiap adegan (`scripts/qa-stills.mjs`), cek transisi, cek tidak ada teks terpotong.
-
-## 5. Suara
-- Narasi ElevenLabs suara **Bagas** (`eleven_v4`, `language_code: id`); kunci API ada di secret GitHub `ELEVENLABS_API_KEY` — jangan pernah minta/menampilkan kunci di chat. Jalankan workflow `voiceover.yml`.
-- Selalu sediakan juga versi **tanpa narasi** (musik saja) untuk dubbing pengguna.
-- Musik orisinal via numpy (`make-music.py`), tanpa sampel berlisensi.
-
-## 6. Kirim ke pengguna
-- Commit ke branch kerja → PR → merge ke `main` (workflow_dispatch butuh `main`) → jalankan workflow → pantau → beri link run + cara unduh (Artifacts, tekan lama di iPad).
-- Kirim pratinjau 540p lewat SendUserFile agar bisa ditonton langsung.
-- Sertakan daftar bab bertimecode untuk deskripsi YouTube.
+## Alur singkat
+naskah (`gen_<topik>.py`) → salin mesin (`new-video.sh`) → stub adegan & ganti merek → AUDIT angka → 4 agen paralel per kelompok adegan → commit per kelompok → `npm run check` → `qa-lines` (baca semua lembar) → perbaiki → `qa-film` + `qa-glitch` → repo GitHub (dibuat pengguna) → PR draft → pengguna merge & render.
+Durasi kerja ±1–2 jam untuk video 15–20 menit.
