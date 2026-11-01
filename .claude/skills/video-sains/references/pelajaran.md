@@ -35,10 +35,16 @@
 - Generator naskah berisi SCRIPT inline: edit generator, bukan berkas rujukan lain, lalu jalankan ulang.
 - Kunci tts ganda di `tts.ts` → galat TS1117.
 
+- Label sudut/angka di atas lobus 3D yang berputar sulit dibaca → taruh angka di samping molekul (label + keterangan), busur tetap di molekul.
+- Adegan yang benda utamanya muncul pada kata terakhir baris pertama → layar kosong ±3 dtk; isi baris pembuka dengan elemen kaitan (mis. daftar keberhasilan teori sebelumnya).
+
 ## Kerja & sesi
 - 4 agen Opus paralel bisa menghabiskan batas 5 jam dalam ±15 menit → commit WIP, lanjutkan agen yang sama via SendMessage setelah reset. Pengguna kadang minta berhenti → TaskStop + commit WIP; jangan pasang jadwal otomatis tanpa diminta.
 - Proses kerja bisa dimulai ulang di tengah tunggu panjang → commit & push sebelum render lama.
 - Jawaban AskUserQuestion bisa kosong → tanya ulang, jangan menebak gaya visual.
 - Whisper lokal: `faster-whisper` + decode ffmpeg ke numpy (PyAV baru error).
+- `scripts/new-video.sh` + `gen_template.py` (skill) menyalin mesin & menulis naskah dalam hitungan menit; teruji di video orbital molekul.
+- Agen yang kena batas: commit WIP lalu SendMessage ke agen yang sama setelah reset — laporannya kadang bilang perubahan sudah ikut di commit WIP (tidak perlu commit lagi).
+- Setelah PR `science-intro` di-merge: gabungkan `origin/main` ke branch kerja (merge biasa), jangan force-push.
 - `contact.py … 3` (3 kolom) lebih terbaca daripada 9 kolom.
 - Musik 192 kbps bisa > 25 MB (batas unggah web GitHub) → 128 kbps.
