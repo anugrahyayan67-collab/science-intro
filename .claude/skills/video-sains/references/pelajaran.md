@@ -48,3 +48,8 @@
 - Setelah PR `science-intro` di-merge: gabungkan `origin/main` ke branch kerja (merge biasa), jangan force-push.
 - `contact.py … 3` (3 kolom) lebih terbaca daripada 9 kolom.
 - Musik 192 kbps bisa > 25 MB (batas unggah web GitHub) → 128 kbps.
+- Cek fakta ke sumber primer (akses jaringan terbuka): NIST WebBook (konstanta diatomik Huber–Herzberg), CDMS (≈ 350 molekul antarbintang), NASA, nobelprize.org; tandai kolom "Dicek" di `AUDIT.md` sebelum narasi direkam.
+- Label pembuka di `scripts/export-timeline.ts` jangan ditulis mati (bekas "oven microwave & teleskop radio") — sesuaikan per video.
+- `ramp` beri pengaman `Math.max(b, a + 0.05)`: rentang yang dihitung dari dua kata berbeda bisa terbalik saat jeda narasi bergeser → render error.
+- Kartu penutup di atas kartu rangkuman: teks HTML di bawahnya harus memudar penuh (bukan 0,2), kalau tidak tembus.
+- Edge TTS jalan dari sandbox lewat `edge-tts --proxy $HTTPS_PROXY`; Gemini TTS bagus tapi kuota gratis sangat kecil.

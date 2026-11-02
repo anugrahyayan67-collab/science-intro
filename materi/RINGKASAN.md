@@ -13,6 +13,11 @@ Catatan: PDF RPS berupa hasil pindai (teks tidak bisa diekstrak).
 | 5 | Gerak Rotasi | partikel pada cincin, rotor linear 3D, harmonik sferis, momentum sudut, konstanta rotasi & spektrum garis (HI/DI), panjang ikatan, populasi & suhu, spin | **sudah** (repo video-gasing-kuantum, milik Chika, gaya buku catatan terang) |
 | 6 | Struktur & Spektrum Atom Hidrogen | massa tereduksi, pemisahan radial–sudut, potensial efektif, asal kuantisasi, fungsi radial, bilangan kuantum, distribusi radial, orbital s/p/d, ionisasi, deret Lyman/Balmer, aturan seleksi | **sudah** (repo video-atom-hidrogen, ±19 menit) |
 | 7 | Simbol Term & Aturan Seleksi | spin & Pauli, simbol term, aturan Hund, pola p & d, struktur halus, paritas & aturan seleksi | **sudah** (video-simbol-term, "Kode Rahasia Atom", ±17,5 menit) |
+| P9 | Teori Ikatan Valensi (setelah UTS) | Heitler–London, pertukaran & pasangan spin, hibridisasi, σ/π, kegagalan O₂ | **sudah** (video-ikatan-valensi, "Jabat Tangan Elektron") |
+| P10 | Orbital Molekul diatomik | LCAO, ikatan/antiikatan, orde ikatan, O₂ paramagnetik, pencampuran s–p, HOMO/LUMO, PES | **sudah** (video-orbital-molekul, "Elektron Tanpa Alamat", PR) |
+| P11 | Orbital Molekul poliatomik & Hückel | orbital kelompok, BeH₂/CH₄/H₂O, Hückel butadiena & benzena, lingkaran Frost, 4n+2 | **sudah** (video-orbital-poliatomik, "Orbital Milik Bersama", PR) |
+| P12–13 | Simetri Molekul & Grup Titik | unsur & operasi simetri, kiralitas, grup titik & diagram alir, tabel karakter, kepolaran, aktivitas IR | **sudah** (video-simetri-molekul, "Bahasa Simetri", PR) |
+| P14 | Spektroskopi Molekul | empat tangga energi, Boltzmann, aturan seleksi, rotasi, vibrasi-rotasi P/R, Raman, Franck–Condon, Doppler | **sudah** (video-spektroskopi-molekul, "Satu Molekul, Tiga Tarian", PR) |
 
 ## Ide visual per modul
 - **1**: lampu pijar memerah→putih (benda hitam), foton menendang elektron, garis spektrum H.
