@@ -53,3 +53,5 @@
 - `ramp` beri pengaman `Math.max(b, a + 0.05)`: rentang yang dihitung dari dua kata berbeda bisa terbalik saat jeda narasi bergeser → render error.
 - Kartu penutup di atas kartu rangkuman: teks HTML di bawahnya harus memudar penuh (bukan 0,2), kalau tidak tembus.
 - Edge TTS jalan dari sandbox lewat `edge-tts --proxy $HTTPS_PROXY`; Gemini TTS bagus tapi kuota gratis sangat kecil.
+- Pola yang lolos audit tapi melanggar aturan kemulusan: `opacity={p > 0.01 ? 1 : 0}` pada panah/garis yang tumbuh (kepala panah muncul penuh dalam 1 frame) → `Math.min(1, p * 12)`; `x < 1 ? 1 : nilaiLain` → campur dengan faktor kontinu. Cari dengan `grep -rn "? 1 : 0" src/scenes src/components` sebelum PR.
+- Pengaman `ramp` (b ≤ a) sudah dipasang di semua repo video kuantum & seri fisika (PR kecil per repo) — penting saat narasi direkam karena jeda nyata menggeser `wordOf`.
