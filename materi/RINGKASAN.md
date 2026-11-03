@@ -6,7 +6,7 @@ Catatan: PDF RPS berupa hasil pindai (teks tidak bisa diekstrak).
 
 | Modul | Judul | Isi pokok | Status video |
 |---|---|---|---|
-| 1 | Pengantar Kimia Kuantum | gelombang & foton, radiasi benda hitam (Planck), efek fotolistrik, spektrum H & model Bohr, de Broglie, ketidakpastian Heisenberg | belum |
+| 1 | Pengantar Kimia Kuantum | gelombang & foton, radiasi benda hitam (Planck), efek fotolistrik, spektrum H & model Bohr, de Broglie, ketidakpastian Heisenberg | belum (draf naskah + audit: `riset/modul-1-pengantar/`) |
 | 2 | Landasan Kimia Kuantum | Ψ dan \|Ψ\|², normalisasi, superposisi, operator & nilai eigen, nilai harapan, komutator, persamaan Schrödinger, spin & Pauli | **naskah & adegan jadi, mesin diperbarui** (repo video-landasan-kimia-kuantum, "Aturan Main Kuantum", ±18 menit, PR #2; tinggal rekam narasi & render) |
 | 3 | Gerak Translasi | partikel bebas, kotak 1D/2D/3D, simpul & degenerasi, transisi & serapan cahaya, elektron π molekul terkonjugasi, titik kuantum, sumur berhingga, penerowongan | **sudah** (repo video-partikel-kotak, ±22 menit, sudah di-polish: simulasi paket gelombang, STM 3D) |
 | 4 | Gerak Vibrasi | osilator harmonik, massa tereduksi, kuantisasi, fungsi gelombang, titik balik, HCl & efek isotop, aktivitas IR, anharmonisitas, mode normal | **sudah** (repo Claude-Video-Kimia) |
@@ -26,3 +26,6 @@ Catatan: PDF RPS berupa hasil pindai (teks tidak bisa diekstrak).
 - **5**: molekul berputar, tangga energi J(J+1), harmonik sferis berputar, spektrum garis berjarak 2B.
 - **6**: proton–elektron, potensial efektif, awan orbital 1s/2s/2p/3d 3D, elektron jatuh memancarkan foton → garis Balmer merah-hijau-biru-ungu, batas ionisasi.
 - **7**: kotak orbital & panah spin, aturan Hund, diagram transisi yang diizinkan/terlarang.
+
+## Rencana berikutnya
+Usulan seri Kimia Analitik "Seni Mengukur" (12 episode) di `riset/RENCANA-SERI-BERIKUTNYA.md`; naskah episode di `riset/kimia-analitik/`.
