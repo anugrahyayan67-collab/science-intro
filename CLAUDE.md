@@ -99,6 +99,7 @@ Seri Fisika Umum (urutan mengikuti RPS Fisika Umum S1 Kimia UNESA, diarahkan seb
 - Setiap repo video kini punya `naskah/YOUTUBE.md` (judul, deskripsi, bab, rujukan, tag) dari skrip skill `gen_youtube.py`.
 - Mesin `video-landasan-kimia-kuantum` sudah diperbarui (catatan CSS blur di bawah tidak berlaku lagi setelah PR #2 di-merge).
 - Pengguna memakai "pancingan" limit: `send_later` berantai setiap 5 jam (perintah ringan saja) agar jendela 5 jam berikutnya langsung mulai; kerja malam dijadwalkan sesudah reset.
+- `src/Thumbnail.tsx` ikut tersalin saat repo baru dibuat dari repo lama → 8 video seri fisika & 5 video kuantum sempat memakai judul/gambar video lain ("Yang Tak Pernah Hilang", π* + garis natrium). Ganti judul **dan** gambar sesuai topik, lalu render still `Thumbnail` dan lihat sebelum PR.
 
 ## Aturan untuk sesi baru
 - Mulai dengan membaca file ini dan `materi/RINGKASAN.md`; jangan minta pengguna menjelaskan ulang.
