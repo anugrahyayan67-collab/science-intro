@@ -15,7 +15,7 @@ Alasan memilih (1): judulnya langsung berupa misteri yang konkret, kimiawi (pera
 
 ## Benang merah
 
-**Misteri:** Di kamar gelap fotografi, kertas foto hitam-putih aman di bawah lampu merah yang cukup terang selama berjam-jam. Tetapi sekejap cahaya biru yang redup sudah membuatnya menghitam. Menurut fisika klasik, energi cahaya ditentukan oleh kecerahannya — jadi lampu merah yang terang seharusnya lebih "berbahaya".
+**Misteri:** Di kamar gelap fotografi, kertas foto hitam-putih aman di bawah lampu merah yang cukup terang selama beberapa menit. Tetapi sekejap cahaya biru yang redup sudah membuatnya menghitam. Menurut fisika klasik, energi cahaya ditentukan oleh kecerahannya — jadi lampu merah yang terang seharusnya lebih "berbahaya".
 **Dibuka:** adegan `hook`. **Petunjuk:** `pijar` (warna ↔ suhu), `planck` (energi dijual per paket). **Dipecahkan:** `gelap` (setelah Einstein): kristal perak bromida butuh paket energi ≈ 2,5–2,7 eV per kejadian; satu foton merah hanya ≈ 1,9 eV, sebanyak apa pun fotonnya. **Kembali lagi:** `rangkum` — rantai gagasan dari kamar gelap ke fungsi gelombang.
 
 ## Pembagian bagian
@@ -30,19 +30,19 @@ Alasan memilih (1): judulnya langsung berupa misteri yang konkret, kimiawi (pera
 |---|---|---|---|
 | 1 | `hook` | Lampu merah di kamar gelap | Kamar gelap bergaya ilustrasi: lampu merah berdenyut menyinari kertas di baki, kertas tetap putih (hujan butir foton merah memantul). Kilasan biru redup 0,2 dtk → bintik kristal AgBr berubah jadi titik perak, gambar muncul. Label tanya "kenapa?". |
 | 2 | `judul` | Judul | Kartu judul; latar butir foton merah dan biru melayang, biru meninggalkan percikan kecil saat menyentuh garis dasar. |
-| 3 | `awan` | Dua awan kecil tahun 1900 | Langit cerah "fisika klasik" (ikon Newton: apel jatuh; Maxwell: gelombang EM merambat). Dua awan kecil membesar perlahan; satu diberi label "radiasi termal". |
+| 3 | `awan` | Dua awan kecil tahun 1900 | Langit cerah "fisika klasik" (ikon Newton: apel jatuh; Maxwell: gelombang EM merambat). Dua awan kecil membesar perlahan; satu diberi label "ekuipartisi energi" (bukan "radiasi benda hitam"; lihat AUDIT). |
 | 4 | `pijar` | Besi yang berpijar | Batang besi dipanaskan: suhu (termometer) naik 300 → 800 → 1100 → 1600 K; warna bergeser hitam → merah redup (≈ 525 °C) → jingga → putih kekuningan, `interpolateColors` per suhu. Kurva spektrum kecil di samping mengikuti. Kait kimia: tungku keramik, pirometer warna. |
 | 5 | `wien` | Puncak yang bergeser | Tiga kurva Planck (3000/4000/5000 K) tergambar; titik puncak meluncur ke kiri saat T naik; pita warna tampak di bawah sumbu. Pin: Matahari 5772 K → 502 nm; tubuh 310 K → 9,3 µm (gambar kamera termal). **Kartu rumus.** |
 | 6 | `bencana` | Katastrofe ultraviolet | Kurva Rayleigh–Jeans naik terus menembus atap grafik (kamera ikut naik, angka sumbu membesar) sementara data eksperimen turun ke nol. Sirene kecil "∞". Kotak rongga dengan gelombang berdiri yang makin rapat (jumlah mode ↑ pada frekuensi tinggi). |
 | 7 | `planck` | Energi dijual eceran | Osilator di dinding rongga; energinya naik sebagai tangga En = nhν. Untuk ν kecil anak tangga rapat (mudah dinaiki), ν besar anak tangga tinggi (jarang terisi pada suhu itu; butir terisi memudar). Kurva Planck menutup puncak dengan benar. **Kartu rumus.** |
 | 8 | `foto` | Cahaya yang melepaskan elektron | Pelat logam dalam tabung vakum + amperemeter. Lampu merah terang: jarum diam. Lampu ungu/UV redup: elektron melompat, jarum bergerak. Penggeser "kecerahan" dan "warna" ditampilkan; hanya penggeser warna yang mengubah kecepatan elektron. |
-| 9 | `einstein` | Satu foton, satu elektron | Foton (paket bergaris gelombang) menabrak elektron di "sumur" logam sedalam Φ. Batang energi: hν dipotong Φ, sisanya K maks (panjang panah kecepatan elektron sesuai). Grafik K maks–ν: garis lurus dengan kemiringan h, memotong di ν₀ (cesium 2,14 eV → 579 nm). **Kartu rumus.** |
+| 9 | `einstein` | Satu foton, satu elektron | Foton (paket bergaris gelombang) menabrak elektron di "sumur" logam sedalam Φ. Batang energi: hν dipotong Φ, sisanya K maks (panjang panah kecepatan elektron sesuai). Grafik K maks–ν: garis lurus dengan kemiringan h, memotong di ν₀ (cesium ≈ 2 eV → ambang ≈ 600 nm; nilai literatur 1,95–2,14 eV). **Kartu rumus.** |
 | 10 | `gelap` | Misteri terpecahkan | Kembali ke kamar gelap. Kisi kristal AgBr; celah energi digambar sebagai "tembok" ≈ 2,6 eV. Foton merah 1,9 eV (banyak) memantul satu per satu; satu foton biru 2,8 eV mengangkat elektron → ion Ag⁺ menjadi atom Ag, gugus perak kecil = bayangan laten. Batang energi per foton berdampingan. **Kartu rumus** E = hc/λ. |
 | 11 | `kimfoton` | Foton di dunia kimia | Tiga panel bergerak: (a) ikatan C–C bergetar lalu putus saat foton UV 300 nm datang (≈ 400 kJ/mol > 348 kJ/mol), foton merah hanya memantul; (b) daun: klorofil menyerap merah & biru, memantulkan hijau (butir hijau memantul ke mata); (c) uji nyala natrium: hanya warna tertentu yang keluar (pratinjau spektrum garis). |
 | 12 | `surya` | Sel surya dan LED | Pita valensi–konduksi silikon (celah 1,12 eV): foton tampak & IR dekat < 1107 nm mengangkat elektron, arus mengalir ke bola lampu kecil. Dibalik: LED, elektron jatuh melewati celah → foton; geser celah → warna LED berubah merah (1,9 eV) → biru (2,7 eV). Pil "Nobel Fisika 2014: LED biru". |
 | 13 | `compton` | Foton yang menendang | Sinar-X Mo Kα (71 pm) menabrak elektron di grafit seperti bola biliar; foton terhambur memanjang gelombangnya (warna "lebih merah" simbolis), elektron terpental. Busur sudut θ berubah 0 → 180°, Δλ terbaca dari 0 → 4,85 pm. **Kartu rumus.** |
 | 14 | `debroglie` | Kalau cahaya bisa jadi partikel… | Simetri: panah "gelombang → partikel" dibalik "partikel → gelombang". Bola bisbol (145 g, 40 m/s) dengan gelombang yang tak terlihat (λ ≈ 10⁻³⁴ m, zoom bertingkat gagal menemukannya) vs elektron dengan gelombang selebar atom (0,17 nm). **Kartu rumus.** |
-| 15 | `davisson` | Kecelakaan yang beruntung | Laboratorium Bell 1925: botol udara cair meledak (kilatan), target nikel teroksidasi, dipanaskan lama → butir kecil tumbuh jadi kristal besar (animasi rekristalisasi). Berkas elektron 54 eV ditembakkan; detektor diputar; puncak muncul di 50°. Garis atom berjarak 0,215 nm: d sin φ = λ → 0,165 nm vs prediksi 0,167 nm. |
+| 15 | `davisson` | Kecelakaan yang beruntung | Laboratorium Bell, April 1925: botol udara cair meledak (kilatan), target nikel teroksidasi, dipanaskan lama → butir kecil tumbuh jadi kristal besar (animasi rekristalisasi). Teks kecil "awal 1927": target satu kristal, berkas elektron 54 eV ditembakkan; detektor diputar; puncak muncul di 50°. Garis atom berjarak 0,215 nm: d sin φ = λ → 0,165 nm vs prediksi 0,167 nm. |
 | 16 | `mikro` | Mikroskop yang melihat atom | Panjang gelombang dibandingkan: cahaya hijau 550 nm vs elektron 100 kV 3,7 pm (penggaris logaritmik yang ber-zoom). Mikroskop elektron (lensa magnet = kumparan) membentuk citra virus → protein → kisi atom. Pil: Ruska (Nobel Fisika 1986), krio-EM (Nobel Kimia 2017). |
 | 17 | `heisenberg` | Tak bisa tajam bersamaan | Paket gelombang Gauss: saat dipersempit (Δx ↓), distribusi momentum di panel kanan melebar; luas keduanya terkunci. Celah tunggal: celah menyempit → berkas menyebar. **Kartu rumus.** |
 | 18 | `atomdiam` | Elektron yang tak bisa diam | Elektron dikurung kotak 0,1 nm: anak panah kecepatan bergetar acak ≥ 5,8 × 10⁵ m/s. Perkiraan energi kurungan beberapa eV — orde energi ikatan. Kait kimia: H₂ orto/para (pil kutipan Nobel Heisenberg 1932). |
@@ -57,7 +57,7 @@ Konvensi: kalimat pendek, gaya tutur. **[KARTU]** = rumus yang tampil di kartu `
 
 Sebelum ada kamera ponsel, foto dicetak di ruangan khusus: kamar gelap.
 Anehnya, kamar gelap tidak benar-benar gelap. Di langit-langit menyala lampu merah.
-Di bawah lampu merah itu, kertas foto bisa dibiarkan berjam-jam. Tetap putih bersih.
+Di bawah lampu merah itu, kertas foto bisa dibiarkan beberapa menit. Tetap putih bersih.
 Tapi kalau pintu terbuka sekejap, dan sedikit saja cahaya biru masuk, kertas itu langsung rusak. Menghitam.
 Padahal lampu merahnya lebih terang. Kenapa cahaya yang terang tidak berbuat apa-apa, sedangkan cahaya redup justru merusak?
 Pertanyaan sesederhana ini ternyata tidak bisa dijawab fisika klasik. Untuk menjawabnya, kita butuh cara berpikir yang sama sekali baru.
@@ -71,7 +71,7 @@ Pertanyaan sesederhana ini ternyata tidak bisa dijawab fisika klasik. Untuk menj
 Tahun seribu sembilan ratus. Banyak fisikawan merasa ilmunya hampir selesai.
 Gerak benda dijelaskan Newton. Cahaya dijelaskan Maxwell sebagai gelombang elektromagnetik.
 Lord Kelvin menyebut tinggal ada dua awan kecil di langit fisika yang cerah.
-Salah satunya menyangkut panas dan cahaya yang dipancarkan benda.
+Salah satunya menyangkut cara energi panas dibagi rata di antara gerak molekul. Aturan pembagian yang sama kelak juga gagal menjelaskan cahaya dari benda panas.
 Awan kecil itu ternyata membawa badai. Dari sanalah teori kuantum lahir.
 
 ### 4 · `pijar` — Besi yang berpijar
@@ -141,9 +141,9 @@ Sisanya menjadi energi gerak.
 **[KARTU]** K_maks = h ν − Φ
 
 Kalau h nu lebih kecil dari Phi, tidak ada elektron yang keluar. Berapa pun banyaknya foton.
-Untuk cesium, fungsi kerjanya sekitar dua koma satu elektronvolt. Ambangnya sekitar lima ratus delapan puluh nanometer: kuning. Cahaya merah tidak cukup.
+Untuk cesium, fungsi kerjanya hanya sekitar dua elektronvolt. Ambangnya sekitar enam ratus nanometer, di antara kuning dan jingga. Cahaya merah tidak cukup.
 Grafik energi elektron terhadap frekuensi menjadi garis lurus, dan kemiringannya tidak lain adalah h.
-Robert Millikan sebenarnya ingin membantah Einstein. Tahun seribu sembilan ratus enam belas, pengukurannya justru membenarkan rumus ini.
+Robert Millikan sendiri tidak percaya pada gagasan foton Einstein. Tahun seribu sembilan ratus enam belas, pengukurannya justru membenarkan rumus ini.
 Einstein menerima Nobel Fisika tahun seribu sembilan ratus dua puluh satu, bukan untuk relativitas, melainkan untuk hukum efek fotolistrik.
 
 ### 10 · `gelap` — Misteri terpecahkan
@@ -209,7 +209,7 @@ Bukti pertamanya datang dari sebuah kecelakaan.
 Tahun seribu sembilan ratus dua puluh lima, di laboratorium Bell, Clinton Davisson dan Lester Germer sedang menembakkan elektron ke nikel.
 Sebuah botol udara cair meledak. Tabungnya pecah, dan target nikel yang panas teroksidasi.
 Untuk membersihkannya, nikel dipanaskan lama sekali. Tanpa disadari, butir-butir kristal kecilnya tumbuh menjadi beberapa kristal besar.
-Ketika eksperimen diulang, pola hamburan berubah total. Elektron lima puluh empat elektronvolt memantul paling kuat pada sudut lima puluh derajat.
+Ketika eksperimen diulang, pola hamburan berubah total. Mereka lalu menembaki satu kristal nikel yang disiapkan khusus. Awal tahun seribu sembilan ratus dua puluh tujuh, elektron lima puluh empat elektronvolt memantul paling kuat pada sudut lima puluh derajat.
 Dari jarak antaratom nikel, pola itu memberi panjang gelombang nol koma satu enam lima nanometer. Prediksi de Broglie: nol koma satu enam tujuh.
 Elektron berdifraksi. Elektron adalah gelombang.
 Di Skotlandia, George Paget Thomson menemukan hal yang sama dengan elektron yang menembus lapisan logam tipis.
@@ -272,8 +272,8 @@ Sampai jumpa.
 
 ## Catatan untuk tahap produksi
 
-- `gelap`: celah AgBr disebut "sekitar dua setengah eV" (tepi serapan 2,5–2,7 eV, bergantung suhu; lihat AUDIT). Kertas kontras-variabel modern juga peka hijau, jadi lampu aman praktiknya merah/jingga; narasi cukup "kertas foto hitam-putih".
+- `gelap`: celah AgBr disebut "sekitar dua setengah eV" (tepi serapan 2,5–2,7 eV, bergantung suhu; lihat AUDIT). Kertas kontras-variabel modern juga peka hijau, jadi lampu aman yang dianjurkan pabrik ialah coklat muda/amber (Ilford 902, Kodak OC); lampu merah tetap aman secara fisika (foton ≈ 1,9 eV) dan menjadi citra klasik kamar gelap. Batas pabrik: ≤ 4 menit pada jarak ≥ 1,2 m — karena itu narasi "beberapa menit", bukan "berjam-jam".
 - Analogi koin di `gelap` sengaja menekankan "satu foton bekerja sendirian" (model satu foton seperti modul; serapan multi-foton dengan laser intens tidak dibahas).
 - `atomdiam`: "elektron tidak jatuh ke inti" adalah argumen perkiraan (heuristik), jangan ditampilkan sebagai turunan tepat.
-- Fungsi kerja natrium di modul (1,82 eV) berbeda dari nilai CRC (2,36 eV polikristal); karena itu narasi memakai cesium (2,14 eV). Kalau ingin mengikuti contoh modul, beri catatan "nilai bergantung permukaan".
+- Fungsi kerja natrium di modul (1,82 eV) berbeda dari nilai CRC (2,36 eV polikristal); karena itu narasi memakai cesium (≈ 2 eV; Michaelson 1977 2,14 eV, CRC 2017 1,95 eV). Kalau ingin mengikuti contoh modul, beri catatan "nilai bergantung permukaan".
 - Spektrum garis & Bohr sengaja hanya disinggung (sudah ada video Fisika Atom & Atom Hidrogen).
