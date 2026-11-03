@@ -10,7 +10,7 @@ Legenda: ✓ = cocok dengan sumber primer/buku · ✓ (hitung) = diturunkan deng
 | Ksp BaSO₄ (25 °C) | 1,1 × 10⁻¹⁰ | Skoog Lampiran 2, hlm. A-6 (PDF hlm. 1099); juga §8A, hlm. 200 (PDF 218): "1.1 × 10⁻¹⁰ … accepted thermodynamic value" | ✓ |
 | Ksp BaSO₄ (pembanding) | 1,0842 × 10⁻¹⁰; kelarutan 2,448 mg/L (20 °C), 2,85 mg/L (30 °C) | kotak info https://en.wikipedia.org/wiki/Barium_sulfate (mengutip CRC Handbook) | ✓ (lewat Wikipedia; CRC tidak dibuka) |
 | Ka2 H₂SO₄ (HSO₄⁻) | 1,02 × 10⁻² | Skoog Feature 13-1, hlm. 333 (PDF 351) | ✓ |
-| Berat atom ringkas | Ba 137,33(1); S 32,06(2); O 15,999(1); H 1,008; N 14,007; Cl 35,45(1); Ag 107,87(1) | CIAAW *Abridged standard atomic weights*: https://ciaaw.org/abridged-atomic-weights.htm | ✓ (Ba, S, O, Cl, Ag, Li dibaca langsung; H, N, K, Fe dari nilai CIAAW yang umum) |
+| Berat atom ringkas | Ba 137,33(1); S 32,06(2); O 15,999(1); H 1,0080(2); N 14,007(1); Cl 35,45(1); Ag 107,87(1); K 39,098(1); Fe 55,845(2) | CIAAW *Abridged standard atomic weights*: https://ciaaw.org/abridged-atomic-weights.htm | ✓ (semua dibaca langsung dari tabel CIAAW) |
 | Berat atom standar (rentang) | S [32,059; 32,076] sejak 2009; O [15,99903; 15,99977]; Pb [206,14; 207,94] sejak 2020; Ba 137,327(7) sejak 1985 | https://ciaaw.org/sulfur.htm · /oxygen.htm · /lead.htm · /barium.htm | ✓ |
 | Massa molar | BaSO₄ 233,386; SO₄²⁻ 96,056; (NH₄)₂SO₄ 132,134; BaCl₂ 208,230; K₂SO₄ 174,252 g/mol | `hitung.py` dari CIAAW (Wikipedia BaSO₄: 233,39) | ✓ (hitung) |
 
@@ -20,7 +20,7 @@ Legenda: ✓ = cocok dengan sumber primer/buku · ✓ (hitung) = diturunkan deng
 |---|---|---|---|
 | Neraca makro: kapasitas 160–200 g, presisi 0,1 mg | — | Skoog §36D-1, hlm. 964 (PDF 982) | ✓ |
 | "Mungkin pengukuran paling teliti dalam hidup Anda" | — | Skoog catatan pinggir pembuka bab 10, hlm. 244 (PDF 262) | ✓ |
-| Benda hangat tampak lebih ringan (konveksi + udara hangat); galat 10–15 mg untuk cawan saring porselen/botol timbang | — | Skoog §36D, hlm. ≈ 970 (PDF ≈ 988) | ✓ |
+| Benda hangat tampak lebih ringan (konveksi + udara hangat); galat 10–15 mg untuk cawan saring porselen/botol timbang | — | Skoog §36D, hlm. 970 (PDF 988) | ✓ |
 | 0,1 mg pada 0,4355 g = 1 bagian per 4355 ("≈ 4400") | — | `hitung.py` | ✓ (hitung) |
 | Berat tetap: siklus panas–dingin–timbang sampai selisih 0,2–0,3 mg | — | Skoog §10A, hlm. 245 (PDF 263) dan §36E, hlm. 971 (PDF 989) | ✓ |
 | Kertas saring tak berabu 9/11 cm: abu < 0,1 mg | — | Skoog §36F, hlm. 975 (PDF 993) | ✓ |
