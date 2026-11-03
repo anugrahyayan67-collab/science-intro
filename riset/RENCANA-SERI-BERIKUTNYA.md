@@ -135,11 +135,11 @@ Gaya usulan (beda dari seri kuantum emas–sian, seri fisika "Lab" biru tinta, d
 
 ### Episode 2 — "Lonceng Galat" (≈ 12 menit)
 
-**Benang merah**: Darwish dkk. (2026) mengumpulkan hasil titrasi mahasiswa terhadap larutan yang sama: rata-rata ≈ 0,104 M dengan %RSD ≈ 3,4 % dan sedikit kelebihan titik akhir (overshoot) — padahal buret sanggup 0,1 %. Dari mana sebaran itu, dan berapa data yang perlu dipercaya? Kilas balik: W. S. Gosset di pabrik bir Guinness, 1908.
+**Benang merah**: Darwish dkk. (2026) mengumpulkan hasil titrasi mahasiswa terhadap larutan yang sama: enam titrasi (dua set × tiga) larutan NaOH yang sama: 0,0996–0,1081 M, rata-rata ≈ 0,104 M dengan %RSD ≈ 3,4 % — padahal buret sanggup 0,1 %. Dari mana sebaran itu, dan berapa data yang perlu dipercaya? Kilas balik: W. S. Gosset di pabrik bir Guinness, 1908.
 
 | # | Adegan | Visual bergerak |
 |---|---|---|
-| 1 | Pembuka: 30 mahasiswa, 30 angka berbeda untuk larutan yang sama | titik-titik jatuh ke garis bilangan seperti hujan |
+| 1 | Pembuka: enam titrasi, enam angka berbeda untuk larutan yang sama | titik-titik jatuh ke garis bilangan seperti hujan |
 | 2 | Judul | titik menumpuk menjadi lonceng |
 | 3 | Rata-rata dan median | jungkat-jungkit seimbang di rata-rata; median di tengah barisan |
 | 4 | Simpangan (deviasi) tiap data | garis vertikal dari tiap titik ke rata-rata, memanjang-memendek |
@@ -155,7 +155,7 @@ Gaya usulan (beda dari seri kuantum emas–sian, seri fisika "Lab" biru tinta, d
 | 14 | Data pencilan & uji Q Dixon | titik nakal menjauh, celah/rentang dihitung, banding Q_krit |
 | 15 | Q_krit 95 %: n = 3 → 0,970; n = 4 → 0,829; n = 5 → 0,710 | tabel menyala baris demi baris |
 | 16 | Galat sistematik tidak hilang dengan mengulang | lonceng bergeser utuh dari nilai benar meski makin sempit |
-| 17 | Kembali ke Darwish: overshoot ≈ galat sistematik personal; solusi indikator/pH meter | warna indikator merah muda tua vs pucat |
+| 17 | Kembali ke Darwish: sebaran ≈ penilaian titik akhir oleh mata (set "merah muda bertahan 30 dtk" 2,96 % vs 4,30 %); solusi indikator/pH meter. Catatan: overshoot NaOH dari buret justru *menurunkan* M terhitung, dan 0,1000 M hanya konsentrasi rencana (NaOH bukan baku primer) | warna indikator merah muda tua vs pucat |
 | 18 | Di dunia nyata: kartu kendali (control chart) lab QC, uji profisiensi | garis tengah ±2s/±3s, titik harian berjalan |
 | 19 | Teaser ep. 3: "satu tetes mengubah segalanya" | tetes jatuh lambat |
 
