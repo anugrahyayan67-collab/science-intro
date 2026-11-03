@@ -210,8 +210,8 @@ Saat dipanaskan, karbon dioksida keluar dari air. Kesetimbangan bergeser, dan ka
 
 **[KARTU]** Ca²⁺ + 2 HCO₃⁻ → CaCO₃(s) + CO₂(g) + H₂O
 
-Itulah seratus miligram per liter yang hilang. Ia tidak lenyap. Ia menempel di ketel. Bagian yang hilang karena pendidihan disebut kesadahan sementara. Seratus empat puluh sisanya, yang tetap larut, berpasangan dengan anion lain seperti sulfat dan klorida.
-Kalau kita mendidihkan satu setengah liter setiap hari, dalam setahun ketel bisa menampung sekitar lima puluh lima gram kerak. Kira-kira sesendok makan penuh setiap bulan.
+Itulah seratus miligram per liter yang hilang. Ia tidak lenyap. Ia menempel di ketel. Bagian yang hilang karena pendidihan disebut kesadahan sementara. Seratus empat puluh sisanya tetap larut; sebagian besar berpasangan dengan anion lain seperti sulfat dan klorida, dan disebut kesadahan tetap.
+Kalau kita mendidihkan satu setengah liter setiap hari, dalam setahun ketel bisa menampung sekitar lima puluh lima gram kerak. Rata-rata empat setengah gram setiap bulan.
 Kerak ini menghambat perpindahan panas. Untuk membersihkannya, cukup asam lemah seperti cuka atau asam sitrat: karbonat larut sambil melepas gelembung karbon dioksida.
 
 ### 18 · `pangan` — E385 di toples mayones
@@ -228,7 +228,7 @@ Ingat tangga tetapan pembentukan. Timbal delapan belas, kalsium sepuluh koma tuj
 
 **[KARTU]** CaY²⁻ + Pb²⁺ → PbY²⁻ + Ca²⁺   K ≈ 2 × 10⁷
 
-Kenapa harus bentuk kalsium? Karena EDTA tanpa kalsium akan merampas kalsium darah. Pada tahun dua ribu lima, CDC melaporkan tiga kematian akibat kadar kalsium darah yang anjlok setelah terapi kelasi, terkait pemakaian bentuk dinatrium.
+Kenapa harus bentuk kalsium? Karena EDTA tanpa kalsium akan merampas kalsium darah. CDC melaporkan tiga kematian antara tahun dua ribu tiga dan dua ribu lima akibat kadar kalsium darah yang anjlok setelah terapi kelasi, terkait pemakaian bentuk dinatrium.
 Di rumah, EDTA ada di sebagian deterjen dan pembersih. Ia mengikat kalsium dan magnesium agar tidak mengganggu kerja sabun. Tapi EDTA sulit terurai di instalasi pengolahan air limbah. Karena itu beberapa negara Eropa membatasinya dalam deterjen rumah tangga.
 
 ### 20 · `penutup` — Penutup & teaser Ep. 6
