@@ -16,6 +16,19 @@ Pipeline teknis (naskah → timeline → subtitle → render Actions → narasi)
 4. QA: `qa-lines` + `contact.py … 3` (baca semua lembar), `qa-moments` untuk momen kunci; render pratinjau 540p dan kirim ke pengguna.
 5. Thumbnail (`src/Thumbnail.tsx`) wajib diganti sesuai topik — jangan tersalin.
 
+## Struktur naskah (jangan meniru urutan tugas kuliah)
+Video kuantum/fisika mengikuti urutan RPS (definisi → teori → angka → aplikasi). Explainer **bercerita**:
+1. **Pembuka dekat** (5–10 dtk): benda sehari-hari + bunyi/aksi ("Plung!"), langsung ke fenomena.
+2. **Keanehan**: kenapa ini sebenarnya janggal (bandingkan dengan zat/kasus lain) → kartu judul.
+3. **"Bayangkan kalau…"**: skenario andai-andai yang dramatis (taruhannya apa kalau fenomena ini tidak ada).
+4. **Rahasia**: konsep sains lewat karakter + **analogi sehari-hari** (penonton konser, tari lingkaran).
+5. **Bukti sehari-hari**: eksperimen rumahan (botol di freezer) → baru angka/kartu data bersumber.
+6. **Kembali ke skenario awal**: tutup lingkaran cerita (danau selamat).
+7. **Penutup + pertanyaan untuk penonton** (ajak komentar), kapsul kanal.
+- Satu adegan = satu *shot* 5–15 dtk; potong langsung (`trans` bawaan `'cut'`), sapuan panel (`trans: 'wipe'`) hanya di pergantian babak.
+- Kalimat pendek, sapaan "kamu", sedikit humor; kecepatan baca estimasi 5,8 suku kata/dtk (`timeline.ts`).
+- Visual mengikuti kata kunci (`wordOf`) — benda bergerak tepat saat disebut.
+
 ## Ciri gaya (wajib)
 - **Warna:** pastel cerah (`theme.ts`: krem dinding, biru langit, toska baju, koral, kuning). Teks gelap `C.ink` (#2b2d42), bukan hitam murni. Tanpa neon, glow, atau latar gelap.
 - **Bentuk:** bulat, tanpa garis tepi tebal; bayangan lembut satu arah (kanan-bawah, `C.shadow`); kilap putih kecil di kiri-atas benda bulat.
