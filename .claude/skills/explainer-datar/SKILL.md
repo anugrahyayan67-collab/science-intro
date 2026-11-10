@@ -6,7 +6,7 @@ description: Membuat video sains bergaya animasi explainer vektor datar (pastel,
 # Video sains gaya explainer datar
 
 Pemilik: Yayan (SCIENTIAN). Gaya ini **terpisah** dari gaya seri kuantum (gelap, emas–sian) dan seri fisika ("Lab").
-Contoh pertama yang terbukti: repo `septiananugrah-ship-it/video-sains-datar` ("Kenapa Es Batu Mengapung?", 7 adegan, ±2 menit).
+Contoh pertama yang terbukti: repo `anugrahyayan67-collab/video-sains-datar` ("Kenapa Es Batu Mengapung?", 7 adegan, ±2 menit).
 Pipeline teknis (naskah → timeline → subtitle → render Actions → narasi) sama dengan skill `video-sains`; baca `video-sains/references/pipeline.md` untuk langkah persis. Skill ini hanya mengatur **gaya & komponen**.
 
 ## Mulai cepat
