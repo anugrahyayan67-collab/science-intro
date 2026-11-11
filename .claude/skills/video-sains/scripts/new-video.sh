@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Salin mesin video dari repo sebelumnya ke folder baru dan ganti nama komposisi.
 # Pemakaian: new-video.sh <repo_mesin> <topik> <KomposisiPascal> "<Judul workflow>" [branch]
-#   contoh: new-video.sh video-ikatan-valensi orbital-molekul OrbitalMolekul "Orbital Molekul" ccr-xxxx
+#   contoh: new-video.sh kuantum-09-ikatan-valensi orbital-molekul OrbitalMolekul "Orbital Molekul" ccr-xxxx
 set -euo pipefail
 BASE="$1"; TOPIK="$2"; KOMP="$3"; JUDUL="$4"; BR="${5:-$(git -C /home/user/$BASE rev-parse --abbrev-ref HEAD)}"
 SRC=/home/user/$BASE

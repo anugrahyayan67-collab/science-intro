@@ -11,7 +11,7 @@ Pengguna: Yayan (lihat `CLAUDE.md`). Bahasa Indonesia, santai. Gaya visual mengi
 | Jenis | Isi | Akhir |
 |---|---|---|
 | **Edukasi** | 1 fakta/konsep sains yang bikin "oh!" | ajakan follow SCIENTIAN / tonton video panjang |
-| **Potongan** | momen terbaik dari video panjang (Claude-Video-Kimia, video-atom-hidrogen, dst.), disusun ulang vertikal | "versi lengkap di YouTube" |
+| **Potongan** | momen terbaik dari video panjang (kuantum-04-sidik-jari, kuantum-06-atom-hidrogen, dst.), disusun ulang vertikal | "versi lengkap di YouTube" |
 | **Afiliasi** | hal sehari-hari / fakta menarik → sains di baliknya → produk sebagai salah satu solusi atau contoh | CTA keranjang kuning/link + label afiliasi |
 
 Tanyakan hanya yang belum jelas: produk apa (nama, link/etalase, klaim resmi dari kemasan/halaman produk), target penonton, durasi.
@@ -42,7 +42,7 @@ Tanyakan hanya yang belum jelas: produk apa (nama, link/etalase, klaim resmi dar
 - **Subtitle besar** (≥ 64 px, 2–4 kata per tampilan, kata kunci berwarna), selalu ada — banyak penonton tanpa suara.
 - Ganti visual tiap 1,5–3 dtk (zoom, potong, pop-up). Gerak dari frame (`interpolate`), tanpa animasi CSS.
 - Narasi ElevenLabs **Bagas** (secret `ELEVENLABS_API_KEY` per repo), tempo sedikit lebih cepat; selalu buat juga versi tanpa narasi. Musik orisinal numpy, tanpa sampel berlisensi.
-- Gunakan ulang komponen dari `Claude-Video-Kimia` / `video-atom-hidrogen` (atom, molekul, spektrum, `Formula`, `Captions`).
+- Gunakan ulang komponen dari `kuantum-04-sidik-jari` / `kuantum-06-atom-hidrogen` (atom, molekul, spektrum, `Formula`, `Captions`).
 - Render via GitHub Actions → artefak MP4 H.264 (siap unggah dari iPad). Kirim juga **caption TikTok** (≤ 150 karakter + 3–5 hashtag, termasuk #iklan untuk afiliasi) dan ide judul cover.
 - QA: still tiap 3 dtk; cek teks tidak masuk zona UI TikTok, tidak ada klaim terlarang, label afiliasi terlihat.
 

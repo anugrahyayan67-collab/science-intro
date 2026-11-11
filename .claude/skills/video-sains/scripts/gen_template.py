@@ -1,6 +1,6 @@
 """Kerangka generator naskah video. Salin ke scratchpad sebagai gen_<topik>.py, isi SCRIPT, lalu:
     python3 gen_<topik>.py /home/user/video-<topik>/src/script.ts [repo_mesin]
-repo_mesin (default video-simbol-term) dipakai untuk mengambil kepala berkas (tipe + komentar).
+repo_mesin (default kuantum-07-simbol-term) dipakai untuk mengambil kepala berkas (tipe + komentar).
 """
 import json, sys
 
@@ -47,7 +47,7 @@ if __name__ == "__main__":
     ids = [s["id"] for s in SCRIPT]
     assert len(ids) == len(set(ids)), "id adegan ganda"
     dst = sys.argv[1]
-    base = sys.argv[2] if len(sys.argv) > 2 else "video-simbol-term"
+    base = sys.argv[2] if len(sys.argv) > 2 else "kuantum-07-simbol-term"
     src = open(f"/home/user/{base}/src/script.ts").read()
     head = src[:src.index("export const SCRIPT")]
     first = head.splitlines()[0]

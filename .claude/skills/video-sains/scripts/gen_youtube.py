@@ -8,15 +8,15 @@ FISIKA_TAIL = ("Bagian dari seri Fisika Umum untuk mahasiswa kimia: setiap video
                "yang menjembatani ke kimia kuantum.\nDisusun oleh Septian Anugrah Dwi Putra.")
 
 V = {
- 'video-simbol-term': (
+ 'kuantum-07-simbol-term': (
   "Mengapa lampu natrium memancarkan DUA garis kuning yang nyaris kembar, 589,0 dan 589,6 nm? Jawabannya tersembunyi dalam \"kode rahasia\" setiap atom: simbol term.\n\n"
   "Di video ini kita belajar spin & prinsip Pauli, membaca dan menyusun simbol term ²ˢ⁺¹L_J, aturan Hund, mikrostatus, struktur halus, paritas, sampai aturan seleksi yang menentukan transisi mana yang boleh terjadi — lalu melihatnya bekerja pada lampu merkuri, fosforesensi, warna ion Mn²⁺, dan laser Nd:YAG.",
   KUANTUM_TAIL, "kimia kuantum, simbol term, term symbol, aturan Hund, aturan seleksi, struktur halus, garis D natrium, spin, prinsip Pauli, spektroskopi atom"),
- 'video-ikatan-valensi': (
+ 'kuantum-09-ikatan-valensi': (
   "Dua atom hidrogen saling mendekat dan tiba-tiba terkunci menjadi molekul, melepaskan ≈ 436 kJ/mol. Apa sebenarnya ikatan kimia itu?\n\n"
   "Video ini membahas teori ikatan valensi: dari pasangan elektron Lewis, perhitungan Heitler–London, peran pertukaran dan pasangan spin, ikatan σ dan π, promosi elektron dan hibridisasi sp³/sp²/sp, pasangan bebas, resonansi benzena, sampai intan, grafit, grafena, dan polimer penghantar — diakhiri dengan misteri oksigen yang menempel pada magnet.",
   KUANTUM_TAIL, "kimia kuantum, teori ikatan valensi, valence bond, Heitler-London, hibridisasi, sp3, ikatan sigma, ikatan pi, benzena, grafena"),
- 'video-orbital-molekul': (
+ 'kuantum-10-orbital-molekul': (
   "Oksigen cair menempel di antara kutub magnet — sesuatu yang tidak bisa dijelaskan teori ikatan valensi. Teori orbital molekul memecahkannya.\n\n"
   "Kita membangun orbital molekul dari kombinasi linear orbital atom (LCAO), memahami orbital ikatan dan antiikatan, orde ikatan, diagram MO molekul diatomik periode 2, pencampuran s–p, ion-ion oksigen, CO dan hemoglobin, HOMO–LUMO, bukti dari spektroskopi fotoelektron, oksigen singlet, dan rangkap tiga nitrogen di balik proses Haber–Bosch.",
   KUANTUM_TAIL, "kimia kuantum, teori orbital molekul, molecular orbital, LCAO, orde ikatan, O2 paramagnetik, diagram MO, HOMO LUMO, spektroskopi fotoelektron, oksigen singlet"),
@@ -24,15 +24,15 @@ V = {
   "Hibridisasi bilang metana punya empat ikatan identik — tetapi spektrum fotoelektronnya menunjukkan DUA puncak, 14 dan 23 eV. Siapa yang benar?\n\n"
   "Video ini membahas orbital molekul poliatomik: orbital kelompok (SALC), BeH₂, metana, air dan pasangan bebasnya, lalu metode Hückel untuk butadiena dan benzena, lingkaran Frost, aturan aromatisitas 4n + 2, konjugasi dan warna, ikatan logam–CO, perancangan katalis, sampai sel surya organik dan OLED.",
   KUANTUM_TAIL, "kimia kuantum, orbital molekul poliatomik, Huckel, SALC, metana, butadiena, benzena, lingkaran Frost, aromatisitas 4n+2, OLED"),
- 'video-simetri-molekul': (
+ 'kuantum-12-simetri': (
   "Karvon dari daun mint dan karvon dari jintan tersusun dari atom yang sama persis — bedanya hanya bayangan cermin, dan hidung kita bisa membedakannya.\n\n"
   "Di video ini kita belajar bahasa simetri: unsur dan operasi simetri (Cₙ, σ, i, Sₙ), kiralitas, grup titik dan diagram alir untuk menentukannya, tabel karakter C₂v, simetri dan tumpang tindih orbital, lalu memakainya untuk meramal kepolaran, getaran yang aktif inframerah, dan mengapa CO₂ adalah gas rumah kaca.",
   KUANTUM_TAIL, "kimia kuantum, simetri molekul, grup titik, point group, tabel karakter, kiralitas, operasi simetri, C2v, inframerah, gas rumah kaca"),
- 'video-spektroskopi-molekul': (
+ 'kuantum-14-spektroskopi': (
   "Teleskop James Webb membaca karbon dioksida di atmosfer planet WASP-39b, sekitar 700 tahun cahaya dari Bumi — hanya dari cahaya yang diserap molekulnya.\n\n"
   "Video penutup seri ini merangkum spektroskopi molekul: empat tangga energi (translasi, rotasi, vibrasi, elektronik), faktor Boltzmann, aturan seleksi, spektrum rotasi CO, vibrasi-rotasi HCl dengan cabang P dan R, hamburan Raman, prinsip Franck–Condon, pelebaran Doppler, hingga alat uji napas, astronomi radio, dan atmosfer planet lain.",
   KUANTUM_TAIL, "kimia kuantum, spektroskopi molekul, spektrum rotasi, vibrasi rotasi, Raman, Franck-Condon, Boltzmann, JWST, WASP-39b, inframerah"),
- 'video-landasan-kimia-kuantum': (
+ 'kuantum-02-aturan-main': (
   "Elektron yang ditembakkan satu per satu tetap membentuk pola interferensi. Aturan main apa yang dipatuhi dunia sekecil itu?\n\n"
   "Video ini membahas landasan kimia kuantum: fungsi gelombang dan tafsiran peluang Born, normalisasi, superposisi, operator dan nilai eigen, pengukuran, nilai harapan, komutator dan ketidakpastian, persamaan Schrödinger, spin dan prinsip Pauli, konfigurasi elektron — lalu penerapannya pada ikatan, spektroskopi, MRI, kimia komputasi, dan komputer kuantum.",
   KUANTUM_TAIL, "kimia kuantum, fungsi gelombang, persamaan Schrodinger, operator, nilai eigen, superposisi, prinsip ketidakpastian, spin, prinsip Pauli, kimia komputasi"),
@@ -76,7 +76,7 @@ V = {
   "Lampu neon merah-jingga, kembang api tembaga hijau-kebiruan, dan garis-garis gelap di cahaya bintang — setiap atom punya \"tangga\" energinya sendiri.\n\n"
   "Video penutup seri Fisika Umum ini membahas model atom Thomson dan Rutherford, krisis atom klasik, spektrum garis, model Bohr, tingkat energi atom hidrogen, energi ionisasi, deret Balmer, keterbatasan model Bohr, elektron sebagai gelombang berdiri, hingga orbital — pintu masuk ke kimia kuantum.",
   FISIKA_TAIL, "fisika umum, fisika atom, model atom Bohr, Rutherford, spektrum garis, deret Balmer, tingkat energi, energi ionisasi, orbital"),
- 'video-akhir-zaman': (
+ 'renungan-akhir-zaman': (
   "Seratus tahun lalu, kabar butuh berhari-hari untuk sampai; hari ini dunia berlari begitu cepat. Video renungan ini menelusuri tanda-tanda akhir zaman menurut Al-Qur'an dan hadis sahih, lalu merenungkan zaman teknologi dan AI.\n\n"
   "Setiap dalil disertai sumbernya di layar, dan bagian renungan dipisahkan dengan jelas dari dalil. Urutan tanda-tanda besar diperselisihkan ulama; wallahu a'lam.",
   "", "akhir zaman, tanda kiamat, renungan, Al-Quran, hadis, teknologi, AI, islam"),
@@ -84,11 +84,11 @@ V = {
 
 
 V2 = {
- 'video-partikel-kotak': (
+ 'kuantum-03-partikel-kotak': (
   "Tiga botol titik kuantum berpendar dengan warna berbeda — padahal bahannya sama persis. Bedanya hanya ukuran partikelnya, beberapa nanometer saja.\n\n"
   "Video ini membahas partikel dalam kotak: partikel bebas, kotak 1D, tangga energi, fungsi gelombang dan peluang, energi titik nol, kotak 2D dan 3D serta degenerasi, sumur berhingga, penerowongan kuantum (lengkap dengan simulasi paket gelombang), transisi dan serapan cahaya, elektron pi dan warna pewarna sianin, penerowongan dalam molekul amonia, titik kuantum, mikroskop STM, hingga memori flash.",
   KUANTUM_TAIL, "kimia kuantum, partikel dalam kotak, particle in a box, kuantisasi energi, titik kuantum, quantum dot, penerowongan kuantum, STM, degenerasi, pewarna sianin"),
- 'video-atom-hidrogen': (
+ 'kuantum-06-atom-hidrogen': (
   "Cahaya dari tabung hidrogen terpecah menjadi beberapa garis warna yang tajam. Atom paling sederhana — satu proton, satu elektron — menyimpan kunci seluruh tabel periodik.\n\n"
   "Video ini membahas struktur dan spektrum atom hidrogen: massa tereduksi, pemisahan radial dan sudut, potensial efektif, bilangan kuantum n, ℓ, m, fungsi radial dan distribusi radial, bentuk orbital s, p, d, energi ionisasi, deret Lyman, Balmer, dan Paschen, aturan seleksi, dari hidrogen ke tabel periodik, lampu deuterium dan kalibrasi, spektroskopi emisi atom, hingga jam atom maser hidrogen di satelit Galileo.",
   KUANTUM_TAIL, "kimia kuantum, atom hidrogen, persamaan Schrodinger, orbital, bilangan kuantum, distribusi radial, deret Balmer, deret Lyman, energi ionisasi, maser hidrogen"),

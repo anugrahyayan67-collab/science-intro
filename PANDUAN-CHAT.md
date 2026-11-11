@@ -3,7 +3,7 @@
 Buka chat baru di Claude Code **dengan repo `science-intro`** (dan repo video yang mau dikerjakan). Claude otomatis membaca `CLAUDE.md`, jadi tidak perlu menjelaskan ulang. Tinggal salin salah satu perintah di bawah.
 
 ## Bikin video baru
-> /video-sains bikin video Modul 6 atom hidrogen di repo video-atom-hidrogen
+> /video-sains bikin video Modul 6 atom hidrogen di repo kuantum-06-atom-hidrogen
 
 Ganti nomor modul & nama repo sesuai kebutuhan. Buat repo kosongnya dulu di GitHub.
 
@@ -11,7 +11,7 @@ Ganti nomor modul & nama repo sesuai kebutuhan. Buat repo kosongnya dulu di GitH
 > Baca materi/RINGKASAN.md, sarankan modul & bab yang paling cocok dijadikan video berikutnya.
 
 ## Revisi video yang sudah ada
-> Di repo Claude-Video-Kimia, perbaiki adegan [nama/menit ke-...]: [apa yang kurang]. Lalu render ulang 2K.
+> Di repo kuantum-04-sidik-jari, perbaiki adegan [nama/menit ke-...]: [apa yang kurang]. Lalu render ulang 2K.
 
 ## Ganti nama/tagline intro
 > Jalankan workflow Render Intro SCIENTIAN 2K dengan nama "..." dan tagline "...".
@@ -31,7 +31,7 @@ Kirim isi `CLAUDE.md` dan `.claude/skills/video-sains/SKILL.md` sebagai pesan pe
 ## Video pendek TikTok / Reels
 > /klip-pendek bikin klip edukasi 30 detik tentang [topik] di repo klip-tiktok
 
-> /klip-pendek bikin klip dari momen terbaik video-atom-hidrogen (garis spektrum Balmer) di repo klip-tiktok
+> /klip-pendek bikin klip dari momen terbaik kuantum-06-atom-hidrogen (garis spektrum Balmer) di repo klip-tiktok
 
 > /klip-pendek bikin video afiliasi 40 detik: kenapa keripik bisa renyah, lalu produk [nama camilan + link/etalase]. Info produk ambil dari kemasan/halaman resmi.
 

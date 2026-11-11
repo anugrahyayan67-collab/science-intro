@@ -3,11 +3,11 @@
 ## Mesin mana yang disalin
 | Jenis video | Repo mesin terbaru | Catatan |
 |---|---|---|
-| Kimia Kuantum (gaya Yayan) | `video-spektroskopi-molekul` (terbaru; rantai: simbol-term → ikatan-valensi → orbital-molekul → orbital-poliatomik → simetri-molekul → spektroskopi) | Mesin Modul 2 + semua perbaikan seri fisika (subtitle silang-pudar, EASE lembut, SceneShell tanpa blur, tts.ts, qa-lines/qa-film/qa-glitch) + `ramp` aman (b ≤ a) + label pembuka bab yang benar. Komponen: vbC (molekul/orbital 3D), moA–D (diagram MO), syA–syD (operasi simetri, mode getaran), spA–spD (`LineSpectrum` dengan opsi `bare`, tangga energi, Boltzmann). Ubah label pembuka di `scripts/export-timeline.ts` untuk tiap video baru. |
+| Kimia Kuantum (gaya Yayan) | `kuantum-14-spektroskopi` (terbaru; rantai: simbol-term → ikatan-valensi → orbital-molekul → orbital-poliatomik → simetri-molekul → spektroskopi) | Mesin Modul 2 + semua perbaikan seri fisika (subtitle silang-pudar, EASE lembut, SceneShell tanpa blur, tts.ts, qa-lines/qa-film/qa-glitch) + `ramp` aman (b ≤ a) + label pembuka bab yang benar. Komponen: vbC (molekul/orbital 3D), moA–D (diagram MO), syA–syD (operasi simetri, mode getaran), spA–spD (`LineSpectrum` dengan opsi `bare`, tangga energi, Boltzmann). Ubah label pembuka di `scripts/export-timeline.ts` untuk tiap video baru. |
 | Seri Fisika Umum ("Lab") | `video-fisika-atom` | Komponen fisika (`physics.tsx`, `flow.tsx`, `fluid.tsx`), merek SCIENTIAN di judul & outro. |
-| Renungan | `video-akhir-zaman` | Gaya "Gulungan Malam". |
-| Video teman | `video-gasing-kuantum` (Chika, terang), `video-ruang-sempit` (Verna, nebula) | Gaya harus beda dari video Yayan. |
-Jangan menyalin dari `video-landasan-kimia-kuantum` tanpa perbaikan (masih CSS blur di SceneShell & `Part`).
+| Renungan | `renungan-akhir-zaman` | Gaya "Gulungan Malam". |
+| Video teman | `teman-gasing-kuantum` (Chika, terang), `teman-ruang-sempit` (Verna, nebula) | Gaya harus beda dari video Yayan. |
+Jangan menyalin dari `kuantum-02-aturan-main` tanpa perbaikan (masih CSS blur di SceneShell & `Part`).
 
 ## Gaya per seri
 - **Kimia Kuantum (Yayan)**: panggung gelap, aksen emas–sian, Outfit + Source Serif 4 + JetBrains Mono, kartu kaca, subtitle kata-per-kata kata kunci emas. Tanpa nama di video.
